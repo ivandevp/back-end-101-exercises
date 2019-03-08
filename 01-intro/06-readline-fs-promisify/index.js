@@ -1,20 +1,6 @@
-const fs = require('fs');
-const path = require('path');
-const readline = require('readline');
-const { promisify } = require('util');
-
-
-const filePath = path.resolve(__dirname, 'prueba.txt');
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
-
-const question = (text) => new Promise((resolve, reject) => {
-    rl.question(text, (answer) => resolve(answer));
-});
-const writeFile = promisify(fs.writeFile);
+const { question, writeFile } = require('./modules');
+const rl = require('./rl-interface');
+const filePath = require('./destination');
 
 question('Escribe algo que quieras guardar: ')
     .then((answer) => {
@@ -22,7 +8,7 @@ question('Escribe algo que quieras guardar: ')
 
         console.log(`Escribiste: ${answer}`);
 
-        return writeFile(filePath, answer, { flag: 'a' });
+        return writeFile(filePath, `${answer}\n`, { flag: 'a' });
     })
     .then(() => console.log('El archivo se escribió correctamente'))
     .catch((error) => console.error(`Hubo un error ${error.message}`));
