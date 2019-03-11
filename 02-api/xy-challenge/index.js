@@ -40,6 +40,7 @@ let getArduinos = async () => {
     return;
 };
 
+
 getArduinos().then((value) => {
     console.log('success', value);
 });
