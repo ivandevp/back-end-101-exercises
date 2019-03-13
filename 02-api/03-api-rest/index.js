@@ -84,7 +84,7 @@ server.put('/products/:id', (req, res) => {
 // /products/:id
 server.delete('/products/:id', (req, res) => {
     const { id } = req.params;
-    const productIndex = findIndex(data, id);;
+    const productIndex = findIndex(data, id);
     const product = data[productIndex];
 
     data.splice(productIndex, 1);
