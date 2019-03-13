@@ -15,9 +15,9 @@ let getArduinos = async () => {
     const browser = await puppeteer.launch({ headless: false });
     const page = await browser.newPage();
     await page.goto('https://store.arduino.cc/usa/');
-    await page.waitFor(500);
+    await page.waitFor(1000);
     await page.waitForSelector(ARDUINO_BUY);
-    await page.waitFor(500);
+    await page.waitFor(1000);
     const arduinos = await page.$$eval(
         ARDUINO_BUY,
         arduinosProducts => arduinosProducts.map(
@@ -30,15 +30,16 @@ let getArduinos = async () => {
             }),
         ),
     );
-    await page.waitFor(500);
+    await page.waitFor(1000);
     await saveJSON(arduinos);
-    await page.waitFor(500);
+    await page.waitFor(1000);
     await page.screenshot({ path: 'arduino.png' });
 
     await browser.close();
 
     return;
 };
+
 
 getArduinos().then((value) => {
     console.log('success', value);
