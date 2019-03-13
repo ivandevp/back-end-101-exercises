@@ -22,11 +22,11 @@ let getArduinos = async () => {
         ARDUINO_BUY,
         arduinosProducts => arduinosProducts.map(
             section => ({
+                id: `${new Date().getTime()}${Math.floor((Math.random() * 1000) + 1)}`,
                 title: section.querySelector('h2 > a').innerText,
-                // price: section.querySelector('span.regular-price > span').innerText,
-                // image: section.querySelector('a.image-product > img').src,
-                // buyLink: section.querySelector('a.image-product').href,
-                // hoverDescription: section.querySelector('div.product-hover-description > div ').innerText,
+                price: section.querySelector('span.price').innerText,
+                image: section.querySelector('a.product-image > img').src,
+                buyLink: section.querySelector('a.product-image').href,
             }),
         ),
     );
