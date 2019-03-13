@@ -18,7 +18,6 @@ const readFilePromise = (file, options) =>
     fs.readFile(file, options, (error, data) => {
       if (error) {
         reject(`Ocurrió un error: ${error.message}`);
-        return;
       }
       resolve(data);
     });
