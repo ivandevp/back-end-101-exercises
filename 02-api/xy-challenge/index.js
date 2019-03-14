@@ -5,7 +5,7 @@ const fs = require('fs');
 const {
     promisify
 } = require('util');
-const funkos = require('./data/funkos.json');
+const funkosData = require('./data/funkos.json');
 const server = express();
 
 const port = process.env.PORT || 1234;
@@ -32,7 +32,7 @@ server.use(bodyParser.json());
 
 // GET - /Products
 server.get('/products', (req, res) => {
-    res.json(funkos);
+    res.json(funkosData);
 })
 
 // GET - /products/:id
@@ -40,7 +40,7 @@ server.get('/products/:id', (req, res) => {
     const {
         id
     } = req.params;
-    const product = find(funkos, id);
+    const product = find(funkosData, id);
 
     if (!product) {
         res.status(404).send(`No encontramos el producto con id ${id}`);
@@ -55,8 +55,8 @@ server.post('/products', (req, res) => {
         id: `${new Date().getTime()}`,
         ...req.body,
     };
-    funkos.push(product);
-    save(funkos);
+    funkosData.push(product);
+    save(funkosData);
     res.json(product);
 });
 
@@ -65,16 +65,31 @@ server.put('/products/:id', (req, res) => {
     const {
         id
     } = req.params;
-    const productIndex = findIndex(funkos, id);
-    const product = funkos[productIndex];
+    const productIndex = findIndex(funkosData, id);
+    const product = funkosData[productIndex];
     const newProduct = {
         ...product,
         ...req.body,
 
     }
-    funkos[productIndex] = newProduct;
-    save(funkos)
+    funkosData[productIndex] = newProduct;
+    save(funkosData)
     res.json(newProduct)
+});
+
+// DELETE - /products/:id
+server.delete('/products/:id', (req, res) => {
+    console.log(`res`, res);
+    const {
+        id
+    } = req.params;
+    const productIndex = findIndex(funkosData, id);;
+    const product = funkosData[productIndex];
+
+    funkosData.splice(productIndex, 1);
+    save(funkosData);
+
+    res.json(product);
 });
 
 server.listen(
