@@ -16,9 +16,10 @@ const port = process.env.PORT || 1234;
 // PUT https://miapi.com/v1/products/1
 // DELETE https://miapi.com/v1/products/1
 
-//const filePath = path.resolve(__dirname, 'funkos.json');
+const filePath = path.resolve(__dirname, './data/funkos.json');
+const writeFile = promisify(fs.writeFile);
+const save = content => writeFile(filePath, JSON.stringify(content));
 
-//const writeFile = promisify(fs.writeFile);
 const find = (data, id) => data.find(item => item.id === id);
 
 
@@ -45,6 +46,16 @@ server.get('/products/:id', (req, res) => {
         return;
     }
     res.json(product)
+})
+// POST - /products
+server.post('/products', (req, res) => {
+    const product = {
+        id: `${new Date().getTime()}`,
+        ...req.body,
+    };
+    funkos.push(product);
+    save(funkos);
+    res.json(product);
 })
 
 server.listen(
