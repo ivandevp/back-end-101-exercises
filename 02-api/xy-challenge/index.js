@@ -18,9 +18,10 @@ const port = process.env.PORT || 1234;
 
 const filePath = path.resolve(__dirname, './data/funkos.json');
 const writeFile = promisify(fs.writeFile);
-const save = content => writeFile(filePath, JSON.stringify(content));
 
+const save = content => writeFile(filePath, JSON.stringify(content));
 const find = (data, id) => data.find(item => item.id === id);
+const findIndex = (data, id) => data.findIndex(item => item.id === id);
 
 
 server.use(bodyParser.urlencoded({
@@ -46,7 +47,8 @@ server.get('/products/:id', (req, res) => {
         return;
     }
     res.json(product)
-})
+});
+
 // POST - /products
 server.post('/products', (req, res) => {
     const product = {
@@ -56,7 +58,24 @@ server.post('/products', (req, res) => {
     funkos.push(product);
     save(funkos);
     res.json(product);
-})
+});
+
+// PUT - /products/:id
+server.put('/products/:id', (req, res) => {
+    const {
+        id
+    } = req.params;
+    const productIndex = findIndex(funkos, id);
+    const product = funkos[productIndex];
+    const newProduct = {
+        ...product,
+        ...req.body,
+
+    }
+    funkos[productIndex] = newProduct;
+    save(funkos)
+    res.json(newProduct)
+});
 
 server.listen(
     port,
