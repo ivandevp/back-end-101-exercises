@@ -12,7 +12,7 @@ const saveJSON = content => writeFile(filePath, JSON.stringify(content));
 
 let getArduinos = async () => {
     const ARDUINO_BUY = 'div.grid-product';
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto('https://store.arduino.cc/usa/');
     await page.waitFor(1000);
@@ -24,9 +24,12 @@ let getArduinos = async () => {
             section => ({
                 id: `${new Date().getTime()}${Math.floor((Math.random() * 1000) + 1)}`,
                 title: section.querySelector('h2 > a').innerText,
-                price: section.querySelector('span.price').innerText,
+                oldPrice: section.querySelector('p.old-price') ? section.querySelector('p.old-price').innerText : '',
+                price: section.querySelector('p.special-price') ? section.querySelector('p.special-price').innerText : section.querySelector('span.regular-price').innerText,
                 image: section.querySelector('a.product-image > img').src,
                 buyLink: section.querySelector('a.product-image').href,
+                hoverDescription: section.querySelector('div.product-hover-description') ? section.querySelector('div.product-hover-description').innerText : 'No description',
+                productLabel: section.querySelector('span.product-label') ? section.querySelector('span.product-label').innerText : (section.querySelector('span.on-sale') ? section.querySelector('span.on-sale').innerText : '')
             }),
         ),
     );
@@ -34,6 +37,7 @@ let getArduinos = async () => {
     await saveJSON(arduinos);
     await page.waitFor(1000);
     await page.screenshot({ path: 'arduino.png' });
+    await page.pdf({path: 'arduinos.pdf', format: 'A4'});
 
     await browser.close();
 
