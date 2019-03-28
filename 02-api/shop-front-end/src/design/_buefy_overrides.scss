@@ -1,0 +1,16 @@
+ /* stylelint-disable */
+
+ .gx-field {
+   position: relative;
+ }
+
+ .gx-field .control input {
+   padding-top: calc(0.375em + 10px);
+ }
+
+ .gx-field label {
+   position: absolute;
+   left: 55px;
+   z-index: 1;
+   font-weight: 200;
+ }

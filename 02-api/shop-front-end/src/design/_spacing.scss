@@ -1,0 +1,45 @@
+// Flexbox utility classes from Tailwind https://tailwindcss.com/docs/spacing
+$sides-map: (
+  t: top,
+  r: right,
+  b: bottom,
+  l: left
+);
+
+// Default all sides
+@each $size in 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 32 {
+    @each $side in t, r, b, l {
+        .p-#{$size} {
+            padding: #{$size * 0.25}rem;
+        }
+        .m-#{$size} {
+            margin: #{$size * 0.25}rem;
+        }
+        .-m-#{$size} {
+            margin: -#{$size * 0.25}rem;
+        }
+    }
+}
+
+// Singles and symmetric sides
+@each $size in 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 32 {
+    @each $side in t, r, b, l {
+        .p#{$side}-#{$size} {
+            padding-#{map-get($sides-map, $side)}: #{$size * 0.25}rem;
+        }
+        .m#{$side}-#{$size} {
+            margin-#{map-get($sides-map, $side)}: #{$size * 0.25}rem;
+        }
+        .-m#{$side}-#{$size} {
+            margin-#{map-get($sides-map, $side)}: -#{$size * 0.25}rem;
+        }
+    }
+    .px-#{$size} {
+        padding-right: #{$size * 0.25}rem;
+        padding-left: #{$size * 0.25}rem;
+    }
+    .py-#{$size} {
+        padding-top: #{$size * 0.25}rem;
+        padding-bottom: #{$size * 0.25}rem;
+    }
+}
