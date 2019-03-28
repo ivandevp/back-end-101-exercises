@@ -17,8 +17,8 @@ rl.question('Escribe algo que quieras buscar: ', (answer) => {
         }
         const expReg = new RegExp(answer, "gi");
         const searched = data.match(expReg);
-        if (searched === null || searched === 0) {
-            console.log('No encontrado');
+        if (!searched) {
+            console.log('No encntrado');
         } else {
             console.log(`${answer} aparece: ${searched.length} veces`);
         }
