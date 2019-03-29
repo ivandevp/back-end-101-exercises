@@ -1,0 +1,114 @@
+[
+  {
+    "title": "Web Design with HTML, CSS, JavaScript and jQuery Set",
+    "image": "https://m.media-amazon.com/images/I/41T53nRtyoL._AC_UL436_.jpg",
+    "author": "Jon Duckett ",
+    "price": "$36.00",
+    "stock": 13
+  },
+  {
+    "title": "A Smarter Way to Learn JavaScript: The new approach that uses technology to cut your effort in half",
+    "image": "https://m.media-amazon.com/images/I/617LMuOkVWL._AC_UL436_.jpg",
+    "author": "Mark Myers ",
+    "price": "$7.99",
+    "stock": 69
+  },
+  {
+    "title": "Eloquent JavaScript, 3rd Edition: A Modern Introduction to Programming",
+    "image": "https://m.media-amazon.com/images/I/91W2aaI7j6L._AC_UL436_.jpg",
+    "author": "Marijn Haverbeke ",
+    "price": "$25.31",
+    "stock": 57
+  },
+  {
+    "title": "Head First JavaScript Programming: A Brain-Friendly Guide",
+    "image": "https://m.media-amazon.com/images/I/51qQTSKL2nL._AC_UL436_.jpg",
+    "author": "Eric Freeman ",
+    "price": "$45.55",
+    "stock": 98
+  },
+  {
+    "title": "JavaScript: The Definitive Guide: Activate Your Web Pages (Definitive Guides)",
+    "image": "https://m.media-amazon.com/images/I/71WzJARrAwL._AC_UL436_.jpg",
+    "author": "David Flanagan ",
+    "price": "$11.36",
+    "stock": 45
+  },
+  {
+    "title": "JavaScript: The Good Parts",
+    "image": "https://m.media-amazon.com/images/I/81kqrwS1nNL._AC_UL436_.jpg",
+    "author": "Douglas Crockford ",
+    "price": "$21.86",
+    "stock": 52
+  },
+  {
+    "title": "Secrets of the JavaScript Ninja",
+    "image": "https://m.media-amazon.com/images/I/81hvVfnV1iL._AC_UL436_.jpg",
+    "author": "Audible Audiobook",
+    "price": "$0.00",
+    "stock": 0
+  },
+  {
+    "title": "How JavaScript Works",
+    "image": "https://m.media-amazon.com/images/I/71K5DR1-xeL._AC_UL436_.jpg",
+    "author": "Douglas Crockford ",
+    "price": "$40.00",
+    "stock": 16
+  },
+  {
+    "title": "JavaScript and JQuery: Interactive Front-End Web Development",
+    "image": "https://m.media-amazon.com/images/I/41y31M-zcgL._AC_UL436_.jpg",
+    "author": "Jon Duckett ",
+    "price": "$25.00",
+    "stock": 84
+  },
+  {
+    "title": "JavaScript: JavaScript Programming.A Step-by-Step Guide for Absolute Beginners",
+    "image": "https://m.media-amazon.com/images/I/81Gu4JP1XFL._AC_UL436_.jpg",
+    "author": "Brian Jenkins ",
+    "price": "$0.00",
+    "stock": 25
+  },
+  {
+    "title": "Professional JavaScript for Web Developers",
+    "image": "https://m.media-amazon.com/images/I/51SwnxibcDL._AC_UL436_.jpg",
+    "author": "Matt Frisbie ",
+    "price": "$38.25",
+    "stock": 81
+  },
+  {
+    "title": "Rediscovering JavaScript: Master ES6, ES7, and ES8",
+    "image": "https://m.media-amazon.com/images/I/91O7qw83swL._AC_UL436_.jpg",
+    "author": "Venkat Subramaniam ",
+    "price": "$37.26",
+    "stock": 35
+  },
+  {
+    "title": "How To Create Your Very First JavaScript Program",
+    "image": "https://m.media-amazon.com/images/I/61-CERTLPXL._AC_UL436_.jpg",
+    "author": "Prime Video",
+    "price": "$ 0.99",
+    "stock": 38
+  },
+  {
+    "title": "Murach's JavaScript and jQuery (3rd Edition)",
+    "image": "https://m.media-amazon.com/images/I/71xekIyzeGL._AC_UL436_.jpg",
+    "author": "Zak Ruvalcaba ",
+    "price": "$51.80",
+    "stock": 17
+  },
+  {
+    "title": "Mastering JavaScript Functional Programming: In-depth guide for writing robust and maintainable JavaScript code in ES8 and beyond",
+    "image": "https://m.media-amazon.com/images/I/71MIF4xjs6L._AC_UL436_.jpg",
+    "author": "Paperback",
+    "price": "$44.99",
+    "stock": 86
+  },
+  {
+    "title": "The Modern JavaScript Collection",
+    "image": "https://m.media-amazon.com/images/I/613FyvpqKBL._AC_UL436_.jpg",
+    "author": "Kindle",
+    "price": "$14.99",
+    "stock": 62
+  }
+]
