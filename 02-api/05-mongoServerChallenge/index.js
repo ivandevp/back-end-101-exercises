@@ -6,10 +6,10 @@ const path = require('path');
 const { promisify } = require('util');
 const data = require('./data.json');
 const server = express();
-const ArduinosEndPoint = require('./products');
+const ArduinosEndPoint = require('./models/products');
 
 const port = process.env.PORT || 5678;
-mongoose.connect('mongodb://localhost:27017/test', { useNewUrlParser: true });
+mongoose.connect('mongodb://localhost:80/arduino-store', { useNewUrlParser: true });
 
 // GET https://miapi.com/v1/products
 // GET https://miapi.com/v1/products/1
@@ -34,67 +34,104 @@ server.use(bodyParser.json());
 // GET - solicitar datos
 // /products
 server.get('/products', (req, res) => {
-    res.json(data);
+    ArduinosEndPoint.find()
+        .then((arduinos) => {
+            console.log("Conected")
+            res.json(arduinos);
+            console.log(res.json(arduinos));
+        })
+        .catch(err => console.log('No, server is gone', err));
 });
 
 // /products/:id
-server.get('/products/:id', (req, res) => {
-    const { id } = req.params;
-    const product = find(data, id);
+// server.get('/products/:id', (req, res) => {
+//     const { id } = req.params;
+//     ArduinosEndPoint.find(data, id)
+//         .then((arduinoById) => {
+//             if (!arduinoById) {
+//                 res.status(404).send('No encontramos el producto');
+//                 return;
+//             }
 
-    if (!product) {
-        res.status(404).send('No encontramos el producto');
-        return;
-    }
+//             res.json(arduinoById);
+//         })
+//         .catch(err => console.log('No, server is gone', err));
+// });
 
-    res.json(product);
-});
+// // POST - ingresar datos
+// // /products
+// server.post('/products', async (req, res) => {
+//     const product = {
+//         _id: `${new Date().getTime()}${Math.floor((Math.random() * 1000) + 1)}`,
+//         ...req.body,
+//     };
+//     ArduinosEndPoint.post('save', function (doc, next){
+//         wait(3000)
+//         .then(() => {
+//              next()
+//         })
+//         .catch(err => console.log('No, server is gone', err));
+//     })
+//     const newArduino = new ArduinosEndPoint({
+//         title: req.body.title,
+//         oldPrice: req.body.oldPrice,
+//         price: req.body.price,
+//         image: req.body.image,
+//         buyLink: req.body.buyLink,
+//         hoverDescription: req.body.hoverDescription,
+//         productLabel: req.body.productLabel
+//     })
+//     await newArduino.save();
+// });
 
-// POST - ingresar datos
-// /products
-server.post('/products', (req, res) => {
-    const product = {
-        _id: `${new Date().getTime()}`,
-        ...req.body,
-    };
+// // PUT - actualizar datos
+// // /products/:id
+// server.put('/products/:id', (req, res) => {
+//     const { id } = req.params;
+//     const productIndex = findIndex(data, id);
+//     const product = data[productIndex];
 
-    data.push(product);
-    save(data);
+//     const newProduct = {
+//         ...product, // name: "Producto X"
+//         ...req.body, // { name: "Producto X2" }
+//     };
+//     ArduinosEndPoint.findByIdAndUpdate(
+//         id,
+//         newProduct,
+//         { new: true },
+//         (err, newProduct) => {
+//             if(err) return res.status(500).send(err);
+//             return res.send(todo);
+//         }
+//     )
 
-    res.json(product);
-});
+//     // data[productIndex] = newProduct;
+//     // save(data);
 
-// PUT - actualizar datos
-// /products/:id
-server.put('/products/:id', (req, res) => {
-    const { id } = req.params;
-    const productIndex = findIndex(data, id);
-    const product = data[productIndex];
-
-    const newProduct = {
-        ...product, // name: "Producto X"
-        ...req.body, // { name: "Producto X2" }
-    };
-
-    data[productIndex] = newProduct;
-    save(data);
-
-    res.json(newProduct);
-});
+//     // res.json(newProduct);
+// });
 
 
-// DELETE - eliminar datos
-// /products/:id
-server.delete('/products/:id', (req, res) => {
-    const { id } = req.params;
-    const productIndex = findIndex(data, id);
-    const product = data[productIndex];
+// // DELETE - eliminar datos
+// // /products/:id
+// server.delete('/products/:id', (req, res) => {
+//     const { id } = req.params;
+//     const productIndex = findIndex(data, id);
+//     const product = data[productIndex];
 
-    data.splice(productIndex, 1);
-    save(data);
+//     ArduinosEndPoint.findByIdAndRemove(id, (err, product) => {
+//         if(err) return res.status(500).send(err);
+//         const response = {
+//             message: "Delate success",
+//             id: id
+//         };
+//         return res.status(200).send(response);
+//     })
+//     // data.splice(productIndex, 1);
+//     // save(data);
 
-    res.json(product);
-});
+//     // res.json(product);
+// });
 
 server.listen(
     port,
