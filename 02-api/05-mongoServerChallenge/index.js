@@ -9,7 +9,7 @@ const server = express();
 const ArduinosEndPoint = require('./models/products');
 
 const port = process.env.PORT || 5678;
-mongoose.connect('mongodb://localhost:80/arduino-store', { useNewUrlParser: true });
+mongoose.connect('mongodb://localhost:27017/arduino-store', { useNewUrlParser: true });
 
 // GET https://miapi.com/v1/products
 // GET https://miapi.com/v1/products/1
@@ -44,45 +44,29 @@ server.get('/products', (req, res) => {
 });
 
 // /products/:id
-// server.get('/products/:id', (req, res) => {
-//     const { id } = req.params;
-//     ArduinosEndPoint.find(data, id)
-//         .then((arduinoById) => {
-//             if (!arduinoById) {
-//                 res.status(404).send('No encontramos el producto');
-//                 return;
-//             }
+ server.get('/products/:id', (req, res) => {
+     const { id } = req.params;
+     ArduinosEndPoint.findById(id)
+         .then((arduinoById) => {
+             if (!arduinoById) {
+                 res.status(404).send('No encontramos el producto');
+                 return;
+             }
 
-//             res.json(arduinoById);
-//         })
-//         .catch(err => console.log('No, server is gone', err));
-// });
+             res.json(arduinoById);
+         })
+         .catch(err => console.log('No, server is gone', err));
+ });
 
-// // POST - ingresar datos
-// // /products
-// server.post('/products', async (req, res) => {
-//     const product = {
-//         _id: `${new Date().getTime()}${Math.floor((Math.random() * 1000) + 1)}`,
-//         ...req.body,
-//     };
-//     ArduinosEndPoint.post('save', function (doc, next){
-//         wait(3000)
-//         .then(() => {
-//              next()
-//         })
-//         .catch(err => console.log('No, server is gone', err));
-//     })
-//     const newArduino = new ArduinosEndPoint({
-//         title: req.body.title,
-//         oldPrice: req.body.oldPrice,
-//         price: req.body.price,
-//         image: req.body.image,
-//         buyLink: req.body.buyLink,
-//         hoverDescription: req.body.hoverDescription,
-//         productLabel: req.body.productLabel
-//     })
-//     await newArduino.save();
-// });
+ // POST - ingresar datos
+ // /products
+ server.post('/products', async (req, res) => {
+     const product = new ArduinosEndPoint(req.body);
+     product.save()
+        .then((product) => {
+            res.json(product);
+        });
+ });
 
 // // PUT - actualizar datos
 // // /products/:id
