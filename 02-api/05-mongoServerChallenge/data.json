@@ -1,0 +1,282 @@
+[
+    {
+        "id": "1553757935138712",
+        "title": "Arduino Uno Rev3",
+        "oldPrice": "",
+        "price": "$22.00",
+        "image": "https://store-cdn.arduino.cc/usa/catalog/product/cache/1/small_image/560x/54a39ccf936f55cfda55ed856d76c198/a/0/a000066_featured_4.jpg",
+        "buyLink": "https://store.arduino.cc/usa/arduino-uno-rev3",
+        "hoverDescription": "A maker-favorite board that enables everyone to start tinkering and coding with ease.",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935138502",
+        "title": "Arduino MKR WiFi 1010",
+        "oldPrice": "",
+        "price": "$33.90",
+        "image": "https://store-cdn.arduino.cc/usa/catalog/product/cache/1/small_image/560x/54a39ccf936f55cfda55ed856d76c198/a/b/abx00023_featured.jpg",
+        "buyLink": "https://store.arduino.cc/usa/mkr-wifi-1010",
+        "hoverDescription": "It connects easily to other Arduino products and is configurable using Arduino software.",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935138193",
+        "title": "Arduino MKR IoT Bundle",
+        "oldPrice": "",
+        "price": "$69.00",
+        "image": "https://store-cdn.arduino.cc/usa/catalog/product/cache/1/small_image/560x/54a39ccf936f55cfda55ed856d76c198/g/k/gkx00006_unbox_featured.jpg",
+        "buyLink": "https://store.arduino.cc/usa/arduino-iot-mkr1000-bundle",
+        "hoverDescription": "Kickstart your IoT development with the MKR1000 and a wide array of components.",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935138787",
+        "title": "Arduino Engineering Kit",
+        "oldPrice": "",
+        "price": "$299.00",
+        "image": "https://store-cdn.arduino.cc/usa/catalog/product/cache/1/small_image/560x/54a39ccf936f55cfda55ed856d76c198/a/k/akx00004_unbox_featured.jpg",
+        "buyLink": "https://store.arduino.cc/usa/arduino-engineering-kit",
+        "hoverDescription": "Engineering Just Got Cool with the Arduino Engineering Kit!",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935138856",
+        "title": "Arduino Starter Kit Multi-language",
+        "oldPrice": "",
+        "price": "$87.90",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/arduino-starter-kit",
+        "hoverDescription": "The Starter Kit is a great way to get started with Arduino, coding and electronics! The Starter Kit includes the components you need to make 15 fun projects following the step-by-step tutorials on the Project Book",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935138955",
+        "title": "Arduino MKR Vidor 4000",
+        "oldPrice": "",
+        "price": "$74.90",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/mkr-vidor-4000",
+        "hoverDescription": "Looking for a board for a very specific use that Arduino doesn’t make?",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935138973",
+        "title": "Arduino MKR1000 WIFI",
+        "oldPrice": "",
+        "price": "$34.99",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/arduino-mkr1000",
+        "hoverDescription": "Develop SECURE WI-FI IOT applications with the MKR1000 and its ENCRYPTION module",
+        "productLabel": ""
+    },
+    {
+        "id": "155375793513827",
+        "title": "Arduino MKR WAN 1300 (LoRa connectivity)",
+        "oldPrice": "",
+        "price": "$39.90",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/mkr-wan-1300",
+        "hoverDescription": "MKR WAN 1300 is a powerful board that combines the functionality of the MKR Zero and LoRa connectivity",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935138977",
+        "title": "Arduino Micro",
+        "oldPrice": "",
+        "price": "$19.80",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/arduino-micro",
+        "hoverDescription": "This ATmega32U4-based board has the same features as the Leonardo in a smaller form factor.",
+        "productLabel": ""
+    },
+    {
+        "id": "155375793513899",
+        "title": "Arduino Nano",
+        "oldPrice": "",
+        "price": "$22.00",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/arduino-nano",
+        "hoverDescription": "Take advantage of this Arduino's small footprint and full Uno functionalities for your compact projects.",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935138990",
+        "title": "Arduino Due",
+        "oldPrice": "",
+        "price": "$38.50",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/due",
+        "hoverDescription": "The power of a 32-bit ARM core in a Mega form factor with all the I/O you may need.",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935138744",
+        "title": "Arduino MKR ETH Shield",
+        "oldPrice": "",
+        "price": "$27.90",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/mkr-eth-shield",
+        "hoverDescription": "No description",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935138814",
+        "title": "Arduino MKR Motor Carrier",
+        "oldPrice": "",
+        "price": "$55.90",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/mkr-motor-carrier",
+        "hoverDescription": "No description",
+        "productLabel": ""
+    },
+    {
+        "id": "155375793513994",
+        "title": "Arduino Motor Shield Rev3",
+        "oldPrice": "",
+        "price": "$22.00",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/arduino-motor-shield-rev3",
+        "hoverDescription": "Control your stepper and DC motors with this L298-based shield.",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935139255",
+        "title": "Arduino UNOtoMKR Bundle",
+        "oldPrice": "",
+        "price": "$41.90",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/unotomkr-bundle",
+        "hoverDescription": "Making is a bundle of fun! Pick the one that's right for you and get started on your next Arduino project in style! Simply mount your MKR1000 to this new adapter and plug in any of your UNO shields!",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935139159",
+        "title": "Arduino Mega 2560 Rev3",
+        "oldPrice": "",
+        "price": "$38.50",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/mega-2560-r3",
+        "hoverDescription": "More memory, more analog inputs, and more digital pins for your complex projects.",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935139905",
+        "title": "Arduino Yún Rev 2",
+        "oldPrice": "",
+        "price": "$59.00",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/arduino-yun-rev-2",
+        "hoverDescription": "The perfect board for your IoT projects!",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935139914",
+        "title": "Arduino Leonardo with Headers",
+        "oldPrice": "",
+        "price": "$19.80",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/leonardo",
+        "hoverDescription": "When you need to emulate a USB mouse or keyboard input, the Leonardo is for you.",
+        "productLabel": ""
+    },
+    {
+        "id": "155375793513977",
+        "title": "Bare Conductive – Flashing Card Set",
+        "oldPrice": "$23.50 ",
+        "price": "$19.90",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/bare-conductive-flashing-card-set",
+        "hoverDescription": "No description",
+        "productLabel": "ON SALE"
+    },
+    {
+        "id": "155375793513937",
+        "title": "MAKERbuino standard kit",
+        "oldPrice": "",
+        "price": "$68.18",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/makerbuino-standard-kit",
+        "hoverDescription": "No description",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935139587",
+        "title": "TWSU Electro-Dough Kit",
+        "oldPrice": "$26.99 ",
+        "price": "$19.90",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/electro-dough-kit",
+        "hoverDescription": "No description",
+        "productLabel": "ON SALE"
+    },
+    {
+        "id": "1553757935139631",
+        "title": "Chibi Lights LED Circuit Stickers Intro Kit",
+        "oldPrice": "$13.00 ",
+        "price": "$8.90",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/chibi-lights-led-circuit-stickers-intro-kit",
+        "hoverDescription": "No description",
+        "productLabel": "ON SALE"
+    },
+    {
+        "id": "1553757935139608",
+        "title": "Teknikio Light up your T-Shirt Kit!",
+        "oldPrice": "",
+        "price": "$14.90",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/teknikio-light-up-your-t-shirt-kit",
+        "hoverDescription": "No description",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935139561",
+        "title": "MKR Proto Large Shield",
+        "oldPrice": "",
+        "price": "$8.99",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/mkr-proto-large-shield",
+        "hoverDescription": "Does your project need more space for the electronic components? Try this large proto board.",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935139621",
+        "title": "Joystick Shield Kit",
+        "oldPrice": "",
+        "price": "$13.90",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/joystick-shield-kit",
+        "hoverDescription": "No description",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935139822",
+        "title": "Feetech RC Micro Servo 1.8kg.cm Metal Gears Analog Servo motor",
+        "oldPrice": "",
+        "price": "$7.50",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/feetech-rc-micro-servo-1-8kg-cm-metal-gears-analog-servo",
+        "hoverDescription": "No description",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935139454",
+        "title": "Grove Starter Kit Plus - IoT Edition",
+        "oldPrice": "",
+        "price": "$79.00",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/grove-starter-kit-plus-iot-edition",
+        "hoverDescription": "No description",
+        "productLabel": ""
+    },
+    {
+        "id": "1553757935139139",
+        "title": "Teensy 3.2 USB Development Board",
+        "oldPrice": "",
+        "price": "$19.80",
+        "image": "https://cdn.arduino.cc/homepage/images/blog-placeholder.svg",
+        "buyLink": "https://store.arduino.cc/usa/teensy-3-2-usb-development-board",
+        "hoverDescription": "No description",
+        "productLabel": ""
+    }
+]

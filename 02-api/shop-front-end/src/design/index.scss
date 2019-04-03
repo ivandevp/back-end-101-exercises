@@ -1,0 +1,54 @@
+// Import Bulma's core
+// Set your brand colors
+$gestionix-purple: #6006E8;
+$gestionix-purple-light: #9167F8;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito",
+sans-serif;
+$primary: $gestionix-purple;
+$warning: #E82258;
+$link: $gestionix-purple-light;
+$grey-dark: #909090;
+$grey-light: #fafafa;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+// $body-background-color: $beige-lighter;
+// $control-border-width: 2px;
+// $input-border-color: transparent;
+// $input-shadow: none;
+// $panel-item-border: none;
+
+// Import only what you need from Bulma
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/elements/_all.sass";
+@import "../../node_modules/bulma/sass/components/_all.sass";
+@import "../../node_modules/bulma/sass/layout/_all.sass";
+@import "../../node_modules/bulma/sass/grid/_all.sass";
+@import '../../node_modules/buefy/src/scss/buefy.scss';
+
+// Import Gestionix utility classes
+// @import 'flexbox';
+// @import 'sizing';
+// @import 'spacing';
+// @import 'borders';
+
+// Tailwind
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable */
+
+// Gestionix overrides
+@import 'buefy_overrides';
+
+// Set body and html to always be full height
+/* stylelint-disable */
+html,
+body {
+  height: 100%;
+}
