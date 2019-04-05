@@ -1,0 +1,22 @@
+{
+  "name": "xy-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon index.js"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "express": "^4.16.4",
+    "puppeteer": "^1.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
